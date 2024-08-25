@@ -85,7 +85,7 @@ california-house-price-prediction/
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 ```
-
+**Note** - Pre-trained model file `regressor.pkl` could not be uploaded to github because of 25M file restriction. If required, it can be regenerated using the model serialization step.
 ## Dependencies
 - Python 3.11+
 - FastAPI
