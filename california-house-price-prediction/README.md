@@ -54,7 +54,6 @@ The California House Price Prediction project aims to predict housing prices bas
 ## **Usage**
 ### Sample Request
 ```json
-POST /predict
 [
   {
     "longitude": -119.01,
