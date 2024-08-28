@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 import joblib
 import pandas as pd
+import uvicorn
 from pydantic import BaseModel
 from typing import List, Optional
-
 
 # Define a data model for a single house's features
 class HouseFeatures(BaseModel):
@@ -17,18 +17,15 @@ class HouseFeatures(BaseModel):
     median_income: float
     ocean_proximity: str
 
-
 # Define the input model to accept a list of HouseFeatures
 class HouseData(BaseModel):
     features: List[HouseFeatures]
-
 
 # Load the model
 model = joblib.load('regressor.pkl')
 
 # Create FastAPI instance
 app = FastAPI()
-
 
 # Define the prediction endpoint
 @app.post("/predict")
@@ -42,5 +39,7 @@ def predict_price(data: List[HouseFeatures]):
     # Return predictions as a list
     return {"predicted_price": prediction.tolist()}
 
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 # FastAPI command to run
 # uvicorn app:app --reload
