@@ -43,11 +43,14 @@ The California House Price Prediction project aims to predict housing prices bas
    git clone https://github.com/avinwu/ds_projects.git
    cd california-house-price-prediction
 
-2. **Build the Docker Image**
+2. Make sure docker service is running. In Windows start the Docker Desktop.
+
+
+3. **Build the Docker Image**
     ```bash
     docker build -t california-house-price-prediction .
    
-3. **Run the Docker Container**
+4. **Run the Docker Container**
     ```bash
    docker run -p 80:80 california-house-price-prediction
 
@@ -73,6 +76,28 @@ The California House Price Prediction project aims to predict housing prices bas
 {
   "predicted_price": [123456.78]
 }
+```
+
+### Sample Python Code
+```python
+import requests
+
+url = "http://localhost:8000/predict"
+
+data = [{
+    "longitude": -122.23,
+    "latitude": 37.88,
+    "housing_median_age": 41.0,
+    "total_rooms": 880.0,
+    "total_bedrooms": 129.0,
+    "population": 322.0,
+    "households": 126.0,
+    "median_income": 8.3252,
+    "ocean_proximity": "NEAR BAY"
+}]
+
+response = requests.post(url, json=data)
+print(response.json())
 ```
 ## Project Structure
 ```bash
