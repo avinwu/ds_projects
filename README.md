@@ -12,3 +12,4 @@
 - Retail Timeseries Forecasting
 - Transaction Value Prediction
 - Transaction Banking Fraud Detection
+- Pricing Strategy Timeseries Clustering
