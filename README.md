@@ -7,3 +7,8 @@
 - Marketing Response Model
 - Merchant Category Recommendation
 - RealEstate House Price Prediction
+- Marketing Bank Product Target Marketing
+- NLP Topic Modeling
+- Retail Timeseries Forecasting
+- Transaction Value Prediction
+- Transaction Banking Fraud Detection
