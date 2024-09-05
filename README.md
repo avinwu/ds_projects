@@ -6,7 +6,7 @@
 - [Marketing Lead Scoring Model](https://github.com/avinwu/ds_projects/tree/main/marketing_lead_scoring_model)
 - [Marketing Response Model](https://github.com/avinwu/ds_projects/tree/main/marketing_response_model)
 - [Merchant Category Recommendation](https://github.com/avinwu/ds_projects/tree/main/merchant_category_recommendation)
-- [RealEstate House Price Prediction](https://github.com/avinwu/ds_projects/tree/main/california-house-price-prediction)
+- [Real Estate House Price Prediction](https://github.com/avinwu/ds_projects/tree/main/california-house-price-prediction)
 - [Marketing Bank Product Target Marketing](https://github.com/avinwu/ds_projects/tree/main/marketing_bank_product_target_marketing)
 - [NLP Topic Modeling](https://github.com/avinwu/ds_projects/tree/main/nlp_topic_modeling)
 - [Retail Sales Timeseries Forecasting](https://github.com/avinwu/ds_projects/tree/main/retail_sales_timeseries_forecasting)
