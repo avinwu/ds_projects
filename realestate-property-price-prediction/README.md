@@ -1,4 +1,4 @@
-# California House Price Prediction
+# Realestate Property Price Prediction
 
 This project is an end-to-end machine learning solution for predicting housing prices in California. The application is built using FastAPI for serving the machine learning model and Docker for containerization, ensuring easy deployment and scalability.
 
